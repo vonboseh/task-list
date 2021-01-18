@@ -1,0 +1,37 @@
+body {
+	font-family: 'East Sea Dokdo', cursive;
+	background-image: url("https://i.pinimg.com/originals/c7/d7/fd/c7d7fd181755adc617d4eaeb508aca69.jpg");
+	height: 500px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h1 {
+	font-size: 8rem;
+	color: #67676E;
+	text-align: center;
+}
+
+.form-control {
+	margin: auto;
+	display: block;
+	font-size: 3rem;
+	width: 65%;
+}
+
+.btn-primary {
+	margin-left: 75%;
+	font-size: 1.5rem;
+}
+
+.btn-secondary {
+	font-size: 1.5rem;
+}
+
+ul {
+	color: #67676E;
+	text-align: center;
+	font-size: 3.25rem;
+	display: center;
+}
