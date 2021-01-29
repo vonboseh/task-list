@@ -71,7 +71,12 @@
 
 			console.log('adding a task...' + newTask.value);
 
-			tasks.push(newTask.value);
+			tasks.push( {
+				id: Date.now(),
+				name: newTask.value,
+				status: false,
+				created: new Date()
+			});
 
 			newTask.value = '';
 
@@ -95,15 +100,20 @@
 				taskDone.type = 'checkbox';
 				taskDone.addEventListener('change', function (event){
 					if (event.target.checked) {
+						task.status: true;
 						event.target.nextSibling.classList.add('done');
 					}
 					else {
+						task.status = false;
 						event.target.nextSibling.classList.remove('done');
 					}
 				});
 
 				let taskText = document.createElement('span');
 				taskText.classList.add('task-item');
+				if (task.status == true) {
+					taskText.classList.add()
+				}
 				taskText.innerText = task;
 
 				let taskRemove = document.createElement('button');
